@@ -36,6 +36,32 @@ public class Flower
         this.flowerY = y;
         this.flowerSize = size;
         this.flowerHeight = stem;
-        this.color = col;        
+        this.color = col;   
+        
+        // set top, left, and bottom
+        this.setTop();
+        this.setLeft();
+        this.setBottom();
+    }
+    
+    /**
+     * Set left
+     */
+    public void setLeft() {
+        this.left = this.flowerX - this.flowerSize/2.0;
+    }
+    
+    /**
+     * Set top
+     */
+    public void setTop() {
+     this.top = this.flowerY - this.flowerSize/2.0;   
+    }
+    
+    /**
+     * Set bottom
+     */
+    public void setBottom() {
+     this.bottom = this.flowerY - this.flowerHeight;   
     }
 }
