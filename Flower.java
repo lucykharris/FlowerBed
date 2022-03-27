@@ -62,7 +62,7 @@ public class Flower
      * Set bottom
      */
     public void setBottom() {
-     this.bottom = this.flowerY - this.flowerHeight;   
+     this.bottom = this.flowerY + this.flowerHeight;   
     }
     
     /**
